@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="人工步骤">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <circle cx="29" cy="22" r="8" fill="#38bdf8"/>
+  <path d="M14 51c0-9 6.7-15 15-15s15 6 15 15" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M45 16l3.5 3.5L56 11" fill="none" stroke="#fbbf24" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48" cy="48" r="9" fill="#fbbf24"/>
+  <path d="M48 43v6M48 53h.01" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+</svg>

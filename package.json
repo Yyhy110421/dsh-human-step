@@ -1,0 +1,56 @@
+{
+  "name": "dsh-human-step",
+  "version": "0.1.0",
+  "description": "DSH 人工步骤插件：开工前标出必须由人完成的步骤，到点弹出原生卡片等待用户确认。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./classify": "./lib/classify.js"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "human-in-the-loop",
+    "2fa",
+    "otp"
+  ],
+  "license": "MIT",
+  "author": "Yyhy110421",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yyhy110421/dsh-human-step.git"
+  },
+  "homepage": "https://github.com/Yyhy110421/dsh-human-step",
+  "bugs": {
+    "url": "https://github.com/Yyhy110421/dsh-human-step/issues"
+  },
+  "scripts": {
+    "test": "node test/manual.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

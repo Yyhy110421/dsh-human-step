@@ -1,0 +1,18 @@
+- insert:
+    - id: human-step
+      name: 'dsh-human-step'
+      config:
+        categories:
+          - verification_code
+          - qr
+          - phone
+          - email
+          - identity
+          - credential
+          - payment
+          - login
+          - physical
+          - approval
+        extraKeywords: []
+        recordHistory: true
+        historyLimit: 50
